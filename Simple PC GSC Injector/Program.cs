@@ -119,7 +119,7 @@ namespace Simple_PC_GSC_Injector
             try
             {
                 Process process;
-                process = Process.GetProcessesByName("BlackOps3")[0];
+                process = Process.GetProcessesByName("t7x")[0];
                 processBAddr = process.MainModule.BaseAddress;
                 processHandle = OpenProcess(PROCESS_WM_READ | PROCESS_VM_WRITE | PROCESS_VM_OPERATION, true, process.Id);
                 return true;
@@ -195,3 +195,4 @@ namespace Simple_PC_GSC_Injector
         }
     }
 }
+
